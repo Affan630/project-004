@@ -203,6 +203,7 @@
             width: 100%;
             height: 250px;
         }
+
         /* Qr Code stylling */
         .qr-image {
             border-radius: 8px;
@@ -226,23 +227,27 @@
             width: 100px;
             font-size: 0.9rem;
         }
+
         input.form-control {
-    padding: 1.5rem .75rem;
-    background-color: #001BA119;
-    color: black;
-}
-input.form-control::placeholder{
-    color: black;
-}
-.search{
-    width: 100%;
-    padding: 1.5rem;
-    background-color: #1a0dab;
-}
-.search:hover{
-    background-color: white;
-    color: #190775;
-}
+            padding: 1.5rem .75rem;
+            background-color: #001BA119;
+            color: black;
+        }
+
+        input.form-control::placeholder {
+            color: black;
+        }
+
+        .search {
+            width: 100%;
+            padding: 1.5rem;
+            background-color: #1a0dab;
+        }
+
+        .search:hover {
+            background-color: white;
+            color: #190775;
+        }
 
         @media (max-width: 768px) {
             .certificate-card {
@@ -264,7 +269,7 @@ input.form-control::placeholder{
     <div class="container-fluid d-flex justify-content-between">
         <!-- Logo Section -->
         <header class="align-items-center col-lg-2">
-            <a class="navbar-brand" href="#">
+            <a class="navbar-brand" href="./page-04.html">
                 <img src="images/logo-colored-bg.png" alt="Logo" class="logo img-fluid">
             </a>
         </header>
@@ -273,24 +278,23 @@ input.form-control::placeholder{
         <nav class="navbar navbar-expand-lg custom-navbar col-lg-10">
             <!-- Toggler for Mobile View -->
             <button class="navbar-toggler ms-auto me-3 navbar-toggler-white" type="button" data-bs-toggle="offcanvas"
-    data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling">
-    <span class="navbar-toggler-icon"></span>
-</button>
-
+                data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
             <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link" href="#"><i class="bi bi-card-checklist"></i> See My Certificates</a>
+                        <a class="nav-link" href="./page-06.html"><i class="bi bi-card-checklist"></i> See My Certificates</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#"><i class="bi bi-star"></i> See My Reviews</a>
+                        <a class="nav-link" href="./page-12.html"><i class="bi bi-star"></i> See My Reviews</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#"><i class="bi bi-share"></i> Shared Certificates</a>
+                        <a class="nav-link" href="./page-14.html"><i class="bi bi-share"></i> Shared Certificates</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#"><i class="bi bi-person-badge"></i> Employee Certificates</a>
+                        <a class="nav-link" href="./page-16.html"><i class="bi bi-person-badge"></i> Employee Certificates</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#"><i class="bi bi-people"></i> Supervisory Access</a>
@@ -300,16 +304,16 @@ input.form-control::placeholder{
                     </li>
                     <!-- Language Dropdown -->
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="languageDropdown" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
+                        <!-- Use data-bs-toggle for Bootstrap 5 -->
+                        <a class="nav-link dropdown-toggle" href="#" id="languageDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
                             <i class="bi bi-translate"></i> Language
                         </a>
-                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="languageDropdown">
+                        <ul class="dropdown-menu" aria-labelledby="languageDropdown">
                             <li><a class="dropdown-item" href="#">English</a></li>
                             <li><a class="dropdown-item" href="#">Spanish</a></li>
                         </ul>
                     </li>
-                    
                     <!-- Upgrade Button -->
                     <li class="nav-item">
                         <button class="btn btn-light upgrade-btn">Upgrade</button>
@@ -325,7 +329,7 @@ input.form-control::placeholder{
             <div class="col-lg-8 col-12 text-lg-start text-center mb-2 mb-lg-0">
                 <h4 class="text-black fw-bold">Employee Certificates</h4>
             </div>
-            
+
             <!-- Buttons Section -->
             <div class="col-lg-4 col-12 d-flex justify-content-center justify-content-lg-end gap-2">
                 <button class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#QrShareModal">
@@ -356,7 +360,7 @@ input.form-control::placeholder{
         </div>
         <!-- Certificate Card1 -->
         <div class="certificate-card border rounded p-3 mb-3 d-flex align-items-center flex-wrap">
-            
+
             <div class="me-3">
                 <p class="mb-0 fw-bold">Employee Name</p>
                 <p class="mb-0">John Mark</p>
@@ -389,7 +393,8 @@ input.form-control::placeholder{
             <div class="certificate-img position-relative">
                 <img src="images/certificate-img.png" alt="Certificate" class="img-fluid rounded">
                 <div class="overlay position-absolute top-50 start-50 translate-middle text-center text-white fw-bold">
-                    <button class="btn btn-secondary"data-bs-toggle="modal" data-bs-target="#certificateModal">View Certificate</button>
+                    <button class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#certificateModal">View
+                        Certificate</button>
                 </div>
             </div>
         </div>
@@ -427,7 +432,8 @@ input.form-control::placeholder{
             <div class="certificate-img position-relative">
                 <img src="images/certificate-img.png" alt="Certificate" class="img-fluid rounded">
                 <div class="overlay position-absolute top-50 start-50 translate-middle text-center text-white fw-bold">
-                    <button class="btn btn-secondary"data-bs-toggle="modal" data-bs-target="#certificateModal">View Certificate</button>
+                    <button class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#certificateModal">View
+                        Certificate</button>
                 </div>
             </div>
         </div>
@@ -465,7 +471,8 @@ input.form-control::placeholder{
             <div class="certificate-img position-relative">
                 <img src="images/certificate-img.png" alt="Certificate" class="img-fluid rounded">
                 <div class="overlay position-absolute top-50 start-50 translate-middle text-center text-white fw-bold">
-                    <button class="btn btn-secondary"data-bs-toggle="modal" data-bs-target="#certificateModal">View Certificate</button>
+                    <button class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#certificateModal">View
+                        Certificate</button>
                 </div>
             </div>
         </div>
@@ -503,11 +510,12 @@ input.form-control::placeholder{
             <div class="certificate-img position-relative">
                 <img src="images/certificate-img.png" alt="Certificate" class="img-fluid rounded">
                 <div class="overlay position-absolute top-50 start-50 translate-middle text-center text-white fw-bold">
-                    <button class="btn btn-secondary"data-bs-toggle="modal" data-bs-target="#certificateModal">View Certificate</button>
+                    <button class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#certificateModal">View
+                        Certificate</button>
                 </div>
             </div>
         </div>
-        
+
     </div>
     <!-- Modal for adding certificate -->
     <div class="modal fade" id="addCertificateModal" tabindex="-1" aria-labelledby="addCertificateModalLabel"
@@ -618,12 +626,12 @@ input.form-control::placeholder{
     </div>
     <!-- Modal for share-form certificate -->
     <div class="modal fade" id="shareCertificateModal" tabindex="-1" aria-labelledby="shareCertificateModalLabel"
-    aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content p-3">
-            <div class="modal-header">
-                <h5 class="modal-title" id="addCertificateModalLabel">Share My Certificates</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content p-3">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="addCertificateModalLabel">Share My Certificates</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
                     <!-- Form -->
@@ -647,7 +655,8 @@ input.form-control::placeholder{
         </div>
     </div>
     <!-- Modal for share-form certificate -->
-    <div class="modal fade" id="certificateModal" tabindex="-1" aria-labelledby="certificateModalLabel" aria-hidden="true">
+    <div class="modal fade" id="certificateModal" tabindex="-1" aria-labelledby="certificateModalLabel"
+        aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
                 <!-- Modal Header -->
@@ -661,8 +670,8 @@ input.form-control::placeholder{
             </div>
         </div>
     </div>
-     <!-- Modal for share-Qr certificate -->
-     <div class="modal fade" id="QrShareModal" tabindex="-1" aria-labelledby="QrShareModal">
+    <!-- Modal for share-Qr certificate -->
+    <div class="modal fade" id="QrShareModal" tabindex="-1" aria-labelledby="QrShareModal">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content text-center">
                 <div class="modal-header">
@@ -684,19 +693,20 @@ input.form-control::placeholder{
         </div>
     </div>
     <!-- Delete Certificate Modal -->
-  <div class="modal fade" id="deleteModal" tabindex="-1" aria-labelledby="deleteModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered">
-      <div class="modal-content">
-        <div class="modal-body text-center">
-          <h5 class="mb-4">Delete this certificate?</h5>
-          <div class="d-flex justify-content-center gap-3">
-            <button type="button" class="btn btn-outline-primary w-50" data-bs-dismiss="modal">Cancel</button>
-            <button type="button" class="btn btn-primary w-50">Delete</button>
-          </div>
+    <div class="modal fade" id="deleteModal" tabindex="-1" aria-labelledby="deleteModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body text-center">
+                    <h5 class="mb-4">Delete this certificate?</h5>
+                    <div class="d-flex justify-content-center gap-3">
+                        <button type="button" class="btn btn-outline-primary w-50"
+                            data-bs-dismiss="modal">Cancel</button>
+                        <button type="button" class="btn btn-primary w-50">Delete</button>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
     </div>
-  </div>
 
     <!-- Footer Section -->
     <footer class="footer py-5 bg-light">
